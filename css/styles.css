@@ -203,8 +203,9 @@ a:hover {
 }
 
 #contact .btn-primary:hover {
-  background-color: var(--clr-light-a0);
+  background-color: var(--clr-primary-a0);
   color: #000000;
+  border-color: var(--clr-primary-a0);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
