@@ -12,10 +12,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();
-    // Simulate form submission success
-    setTimeout(function() {
-      var successModal = new bootstrap.Modal(document.getElementById('successModal'));
-      successModal.show();
-      scrollToTop(); // Scroll to top after form submission
-    }, 500);
+    var form = event.target;
+    var formData = new FormData(form);
+    
+    fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+            successModal.show();
+            form.reset();
+        } else {
+            alert('There was an error submitting the form. Please try again.');
+        }
+    }).catch(error => {
+        alert('There was an error submitting the form. Please try again.');
+    });
   });
