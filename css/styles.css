@@ -273,6 +273,24 @@ a:hover {
   color: var(--clr-dark-a0);
 }
 
+#successModal .modal-dialog {
+  max-width: 50% !important;
+  max-height: 30% !important;
+  margin-top: 20vh !important;
+}
+
+#successModal .modal-footer {
+  padding: 0 0 20px 0 !important;
+}
+
+#successModal .modal-content {
+  background-color: var(--clr-surface-a10) !important;
+  color: var(--clr-light-a0);
+  border: none;
+  border-radius: 10px;
+  height: 20vh !important;
+}
+
 /* Contact Section */
 #contact {
   background: linear-gradient(var(--clr-surface-a10) 30%, var(--clr-surface-a0) 150%);
