@@ -12,6 +12,8 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel= "stylesheet" href= "line-awesome/css/line-awesome.min.css" >
 </head>
 
 <body>
@@ -31,6 +33,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
         </ul>
         <a href="#contact" class="btn ms-3">Contact Me</a>
       </div>
@@ -48,50 +53,227 @@
 
   <!--- Services Section -->
   <div class="container py-5" id="services">
-    <h2 class="text-center mb-4">Our Services</h2>
+    <h2 class="text-center mb-4">My Services</h2>
     <div class="row">
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#customWebsiteDesignModal">
           <img src="img/order.jpg" class="card-img-top" alt="Website Design">
           <div class="card-body">
-            <h5 class="card-title">Custom Website Design</h5>
-            <p class="card-text">We create personalized websites that reflect your brand and cater to your audience.</p>
+        <h5 class="card-title">Custom Website Design</h5>
+        <p class="card-text">I create personalized websites that reflect your brand and cater to your audience.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#ecommerceSolutionsModal">
           <img src="img/plant-near-laptop.jpg" class="card-img-top" alt="E-commerce Setup">
           <div class="card-body">
-            <h5 class="card-title">E-commerce Solutions</h5>
-            <p class="card-text">Expand your business with fully functional and easy-to-manage online stores.</p>
+        <h5 class="card-title">E-commerce Solutions</h5>
+        <p class="card-text">Expand your business with fully functional and easy-to-manage online stores.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#seoOptimizationModal">
           <img src="img/analytics.jpg" class="card-img-top" alt="SEO Optimization">
           <div class="card-body">
-            <h5 class="card-title">SEO Optimization</h5>
-            <p class="card-text">We optimize your website to improve your search engine rankings and increase traffic.</p>
+        <h5 class="card-title">SEO Optimization</h5>
+        <p class="card-text">I optimize your website to improve your search engine rankings and increase traffic.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#graphicDesignModal">
           <img src="img/online-delivery.jpg" class="card-img-top" alt="Graphic Design">
           <div class="card-body">
-            <h5 class="card-title">Graphic Design</h5>
-            <p class="card-text">Enhance your brand with eye-catching visuals and professional designs.</p>
+        <h5 class="card-title">Graphic Design</h5>
+        <p class="card-text">Enhance your brand with eye-catching visuals and professional designs.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#socialMediaMarketingModal">
           <img src="img/social.jpg" class="card-img-top" alt="Social Media Marketing">
           <div class="card-body">
             <h5 class="card-title">Social Media Marketing</h5>
             <p class="card-text">Grow your audience with targeted social media strategies and engagement.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+          <img src="img/portfolio.JPG" class="card-img-top" alt="Portfolio">
+          <div class="card-body">
+            <h5 class="card-title">My Portfolio</h5>
+            <p class="card-text">Check out my previous work and see how I can help your business.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div class="modal fade" id="customWebsiteDesignModal" tabindex="-1" aria-labelledby="customWebsiteDesignModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ecommerceSolutionsModal">
+              <i class="las la-angle-right next" style="font-size: 64px;"></i>
+            </button>
+            <div class="modal-body">
+              <img src="img/order.jpg" class="img-fluid mb-3" alt="Website Design">
+              <div>
+                <h3 class="modal-title" id="customWebsiteDesignModalLabel">Custom Website Design</h3>
+                
+              </div>
+              <p>My custom website design services help businesses create unique, user-friendly, and high-performing websites. Whether you're a startup or an established brand, I craft designs that align with your vision and enhance user engagement.</p>
+              <ul>
+                <li>Responsive and mobile-friendly design</li>
+                <li>Custom UI/UX elements</li>
+                <li>Optimized for speed and SEO</li>
+                <li>Integration with CMS platforms like WordPress, Shopify, and more</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary" data-bs-dismiss="modal">Contact Me</a>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ecommerceSolutionsModal" tabindex="-1" aria-labelledby="ecommerceSolutionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#customWebsiteDesignModal">
+              <i class="las la-angle-left prev" style="font-size: 64px;"></i>
+            </button>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#seoOptimizationModal">
+              <i class="las la-angle-right next" style="font-size: 64px;"></i>
+            </button>
+            <div class="modal-body">
+              <img src="img/plant-near-laptop.jpg" class="img-fluid mb-3" alt="E-commerce Setup">
+              <h3 class="modal-title" id="ecommerceSolutionsModalLabel">E-commerce Solutions</h3>
+              <div>
+              </div>
+              <p>We provide comprehensive e-commerce solutions to help you build, manage, and scale your online store. My services cover everything from setting up your store to optimizing it for sales.</p>
+              <ul>
+                <li>Custom e-commerce website development</li>
+                <li>Shopping cart and payment gateway integration</li>
+                <li>Product management and inventory tracking</li>
+                <li>Support for platforms like Shopify, WooCommerce, Magento, and more</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="#contact" class="btn btn-primary" data-bs-dismiss="modal">Contact Me</a>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="seoOptimizationModal" tabindex="-1" aria-labelledby="seoOptimizationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ecommerceSolutionsModal">
+              <i class="las la-angle-left prev" style="font-size: 64px;"></i>
+            </button>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#graphicDesignModal">
+              <i class="las la-angle-right next" style="font-size: 64px;"></i>
+            </button>
+            <div class="modal-body">
+              <img src="img/analytics.jpg" class="img-fluid mb-3" alt="SEO Optimization">
+              <h3 class="modal-title" id="seoOptimizationModalLabel">SEO Optimization</h3>
+              <p>Boost your website's visibility. I use data-driven strategies to improve your ranking on search engines and drive organic traffic.</p>
+              <ul>
+                <li>Keyword research and on-page optimization</li>
+                <li>Content marketing and backlink building</li>
+                <li>Local SEO for businesses targeting specific locations</li>
+                <li>Ongoing monitoring and performance analysis</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="#contact" class="btn btn-primary" data-bs-dismiss="modal">Contact Me</a>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="graphicDesignModal" tabindex="-1" aria-labelledby="graphicDesignModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#seoOptimizationModal">
+              <i class="las la-angle-left prev" style="font-size: 64px;"></i>
+            </button>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#socialMediaMarketingModal">
+              <i class="las la-angle-right next" style="font-size: 64px;"></i>
+            </button>
+            <div class="modal-body">
+              <img src="img/online-delivery.jpg" class="img-fluid mb-3" alt="Graphic Design">
+              <h3 class="modal-title" id="graphicDesignModalLabel">Graphic Design</h3>
+              <p>My graphic design services help businesses create visually stunning and engaging branding materials. From logos to social media assets, I bring your ideas to life.</p>
+              <ul>
+                <li>Logo design and brand identity</li>
+                <li>Marketing materials (brochures, flyers, banners)</li>
+                <li>Social media graphics and ad creatives</li>
+                <li>Website and UI/UX design elements</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="#contact" class="btn btn-primary" data-bs-dismiss="modal">Contact Me</a>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="socialMediaMarketingModal" tabindex="-1" aria-labelledby="socialMediaMarketingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#graphicDesignModal">
+              <i class="las la-angle-left prev" style="font-size: 64px;"></i>
+            </button>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+              <i class="las la-angle-right next" style="font-size: 64px;"></i>
+            </button>
+            <div class="modal-body">
+              <img src="img/social.jpg" class="img-fluid mb-3" alt="Social Media Marketing">
+              <h3 class="modal-title" id="socialMediaMarketingModalLabel">Social Media Marketing</h3>
+              <p>Increase your brand's reach and engagement with my social media marketing services. I create and execute data-driven strategies to connect with your target audience and grow your online presence.</p>
+              <ul>
+                <li>Social media strategy development</li>
+                <li>Paid advertising on platforms like Facebook, Instagram, LinkedIn, and TikTok</li>
+                <li>Community engagement and reputation management</li>
+                <li>Analytics and performance tracking</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="#contact" class="btn btn-primary" data-bs-dismiss="modal">Contact Me</a>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#socialMediaMarketingModal">
+              <i class="las la-angle-left prev" style="font-size: 64px;"></i>
+            </button>
+            <div class="modal-body">
+              <img src="img/portfolio.JPG" class="img-fluid mb-3" alt="My Portfolio">
+              <h3 class="modal-title" id="portfolioModalLabel">My Portfolio</h3>
+              <p>Explore my collection of past projects, showcasing my expertise in web design, development, graphic design, and digital marketing. Each project highlights my skills in creating unique, functional, and visually appealing solutions for various clients.</p>
+              <p>What you will find in my portfolio:</p>
+              <ul>
+                <li>Custom website designs and development projects</li>
+                <li>Branding and graphic design works</li>
+                <li>E-commerce solutions and integrations</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
           </div>
         </div>
       </div>
@@ -102,7 +284,7 @@
   <div class="py-5" id="contact">
     <div class="container text-center">
       <h2 class="mb-4">Contact Me</h2>
-      <p>Ready to get started? Send me a message below.</p>
+      <p class="contactSubHeader">Ready to get started? Send me a message below.</p>
       <form id="contactForm" action="send_email.php" method="POST">
         <div class="mb-3">
             <input class="form-control" id="name" name="name" placeholder="Name" required>

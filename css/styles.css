@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', -apple-system, Segoe UI, sans-serif !important;
 }
 
 body {
@@ -12,6 +11,7 @@ body {
   background-color: var(--clr-surface-a0) !important;
   color: var(--clr-light-a0);
   padding-top: 56px;
+  font-family: 'Roboto', -apple-system, Segoe UI, sans-serif;
 }
 
 h1, h2, h3 {
@@ -40,38 +40,41 @@ a:hover {
   font-weight: bold;
 }
 
+.navbar-brand:hover {
+  color: var(--clr-primary-a10) !important;
+}
+
 .navbar-nav .nav-link {
   color: var(--clr-light-a0) !important;
   font-size: 1.1rem;
   text-transform: uppercase;
   transition: color var(--clr-surface-a0) 0.3s ease;
-
+  border-radius: 5px;
+  padding: 10px 15px;
 }
 
 .navbar-nav .nav-link:hover {
   color: var(--clr-primary-a20) !important;
   background-color: var(--clr-surface-a10) !important;
-  border-radius: 5px;
-  padding: 10px 15px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar .btn {
-  background-color: var(--clr-primary-a30) !important;
+  background-color: var(--clr-primary-a10) !important;
   color: var(--clr-dark-a0) !important;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 10px 20px;
   font-size: 1.25rem;
 }
 
 .navbar .btn:hover {
-  background-color: var(--clr-primary-a10) !important;
+  background-color: var(--clr-primary-a30) !important;
   color: var(--clr-dark-a0) !important;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(var(--clr-surface-a10) 30%, var(--clr-surface-a0) 150%);;
+  background: linear-gradient(var(--clr-surface-a10) 30%, var(--clr-surface-a0) 150%);
   color: var(--clr-light-a0);
   height: 100vh;
   display: flex;
@@ -79,11 +82,11 @@ a:hover {
   align-items: center;
   text-align: center;
   padding: 20px;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
   color: var(--clr-light-a0);
 }
@@ -93,7 +96,7 @@ a:hover {
   padding: 15px 30px;
   background-color: var(--clr-surface-a10);
   color: var(--clr-light-a0);
-  border-color: var(--clr-light-a0);
+  border-color: var(--clr-primary-a0);
   border-radius: 50px;
   transition: background-color 0.3s ease;
 }
@@ -180,17 +183,112 @@ a:hover {
   margin: 0 auto;
 }
 
+/* Modal Styling */
+.modal-dialog {
+  max-width: 50% !important;
+}
+
+.modal-content {
+  background-color: var(--clr-surface-a10) !important;
+  color: var(--clr-light-a0);
+  border: none;
+  border-radius: 10px;
+  height: 90vh;
+}
+
+.modal-body h3 {
+  color: var(--clr-primary-a20);
+  margin-bottom: 20px;
+}
+
+.next {
+  background-color: var(--clr-surface-a10) !important;
+  color: var(--clr-light-a0) !important;
+  right: -100px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.prev {
+  background-color: var(--clr-surface-a10) !important;
+  color: var(--clr-light-a0) !important;
+  left: -100px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.prev:hover,
+.next:hover {
+  color: var(--clr-primary-a0) !important;
+  background-color: var(--clr-surface-a30) !important;
+}
+
+.modal-body {
+  padding: 20px;
+  font-size: 1.25rem;
+  color: var(--clr-light-a0);
+  overflow-y: auto;
+}
+
+.modal-body img {
+  width: 100% !important;
+  height: 50vh !important;
+  object-fit: cover !important;
+  margin-bottom: 20px !important;
+}
+
+.modal-body p {
+  margin-bottom: 0;
+}
+
+.modal-footer {
+  border-top: none !important;
+  padding: 0 1rem 1rem !important;
+
+}
+
+.modal-footer .btn {
+  background-color: var(--clr-surface-a10) !important;
+  color: var(--clr-primary-a20);
+  border-color: var(--clr-primary-a20) !important;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1rem;
+}
+
+.modal-footer .btn-close {
+  color: var(--clr-light-a0) !important;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.modal-footer .btn:hover {
+  background-color: var(--clr-primary-a10) !important;
+  color: var(--clr-dark-a0);
+}
+
 /* Contact Section */
 #contact {
-  background-color: var(--clr-surface-a10) ;
+  background: linear-gradient(var(--clr-surface-a10) 30%, var(--clr-surface-a0) 150%);
   padding: 60px 0;
-  color: var(--clr-primary-a20);
 }
 
 #contact h2 {
   font-size: 2rem;
   margin-bottom: 30px;
   color: var(--clr-light-a0);
+}
+
+#contact .contactSubHeader {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--clr-primary-a20) !important;
 }
 
 #contact .btn-primary {
@@ -239,11 +337,13 @@ a:hover {
 .footer {
   background-color: var(--clr-surface-a0);
   color: var(--clr-light-a0);
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
 
 :root {
+
+  color-scheme: dark;
   /** Base colors */
   --clr-dark-a0: #000000;
   --clr-light-a0: #ffffff;
